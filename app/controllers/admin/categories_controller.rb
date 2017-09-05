@@ -18,6 +18,10 @@ class Admin::CategoriesController < ApplicationController
     end
   end
 
+  def show
+    @category = Category.last
+  end
+
   private
 
   def category_params
